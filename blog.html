@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | DFW Lead</title>
+    <meta name="description" content="Insights, tips, and strategies for real estate lead generation and appointment booking in the Dallas-Fort Worth area.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Design Tokens Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            black: '#0f0f0f',
+                            charcoal: '#1a1a1a',
+                            surface: '#262626',
+                            accent: '#FF7A59',
+                            accentHover: '#E56042',
+                            text: '#ffffff',
+                            muted: '#a3a3a3',
+                            border: '#333333'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Inter"', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { 
+            background-color: #0f0f0f; 
+            color: #ffffff;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.04'/%3E%3C/svg%3E");
+        }
+        
+        .glass-nav {
+            background: rgba(15, 15, 15, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-brand-accent selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav border-b border-brand-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="index.html" class="flex-shrink-0 flex items-center gap-3">
+                    <span class="font-serif text-2xl font-bold text-white tracking-tight">DFW Lead</span>
+                    <span class="hidden lg:inline-flex text-[10px] uppercase tracking-wider bg-brand-surface text-brand-muted px-2 py-1 rounded border border-brand-border">Dallas-Fort Worth</span>
+                </a>
+
+                <!-- Desktop Nav -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html#how-it-works" class="text-sm font-medium text-brand-muted hover:text-white transition-colors duration-200">How It Works</a>
+                    <a href="index.html#packages" class="text-sm font-medium text-brand-muted hover:text-white transition-colors duration-200">Packages</a>
+                    <a href="blog.html" class="text-sm font-medium text-white border-b-2 border-brand-accent pb-1">Blog</a>
+                    <a href="index.html#faq" class="text-sm font-medium text-brand-muted hover:text-white transition-colors duration-200">FAQ</a>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="flex items-center gap-4">
+                    <a href="tel:+14695574738" class="hidden lg:block text-sm font-medium text-white hover:text-brand-accent transition">Call Us</a>
+                    <a href="index.html#demo" class="bg-brand-accent hover:bg-brand-accentHover text-white text-sm font-semibold py-2.5 px-6 rounded-full transition shadow-lg shadow-brand-accent/20">
+                        Get Started <span class="hidden sm:inline">— Free Consultation</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Header -->
+    <section class="pt-32 pb-16 bg-brand-black relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-brand-accent font-bold tracking-widest uppercase text-xs mb-3 block">Insights & Strategies</span>
+                <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl text-white mb-4">DFW Lead Blog</h1>
+                <p class="text-brand-muted text-lg max-w-2xl mx-auto">
+                    Weekly insights on lead generation, speed-to-lead strategies, and real estate marketing in the Dallas-Fort Worth metroplex.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts Index -->
+    <section class="py-16 bg-brand-charcoal border-y border-brand-border">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Blog Posts Grid -->
+            <div id="blog-posts" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Blog posts will be dynamically added here -->
+                <!-- Example structure for future posts:
+                
+                <article class="bg-brand-black rounded-2xl border border-brand-border hover:border-brand-accent/50 transition duration-300 overflow-hidden group">
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 text-xs text-brand-muted mb-4">
+                            <span>January 15, 2026</span>
+                            <span>•</span>
+                            <span>5 min read</span>
+                        </div>
+                        <h2 class="font-serif text-xl text-white mb-3 group-hover:text-brand-accent transition-colors">
+                            <a href="blog/post-slug.html">Post Title</a>
+                        </h2>
+                        <p class="text-brand-muted text-sm leading-relaxed mb-4">
+                            Post excerpt goes here...
+                        </p>
+                        <a href="blog/post-slug.html" class="text-brand-accent hover:text-brand-accentHover text-sm font-medium inline-flex items-center gap-2">
+                            Read More
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+                
+                -->
+                
+                <!-- Placeholder: No posts yet -->
+                <div class="col-span-full text-center py-16">
+                    <div class="inline-flex items-center justify-center w-16 h-16 bg-brand-surface rounded-full mb-6">
+                        <svg class="w-8 h-8 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-serif text-2xl text-white mb-3">Coming Soon</h3>
+                    <p class="text-brand-muted max-w-md mx-auto">
+                        Our first blog post is coming soon. Check back weekly for insights on lead generation, speed-to-lead strategies, and real estate marketing.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Newsletter Signup (Optional) -->
+    <section class="py-16 bg-brand-black">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="font-serif text-3xl text-white mb-4">Stay Updated</h2>
+            <p class="text-brand-muted mb-8">Get weekly insights delivered to your inbox.</p>
+            <div class="max-w-md mx-auto">
+                <a href="index.html#demo" class="inline-block bg-brand-accent hover:bg-brand-accentHover text-white font-semibold py-3 px-8 rounded-full transition shadow-lg shadow-brand-accent/20">
+                    Contact Us to Subscribe
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-black border-t border-brand-border pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-1 md:col-span-2">
+                    <span class="font-serif text-2xl font-bold text-white tracking-tight">DFW Lead</span>
+                    <p class="text-brand-muted mt-6 text-sm max-w-sm leading-relaxed">
+                        Generating inbound pre-qualified volume appointments for real estate teams and brokerages in the Dallas-Fort Worth metroplex.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-semibold mb-6">Service Area</h4>
+                    <ul class="text-sm text-brand-muted space-y-3">
+                        <li class="hover:text-white transition">Dallas</li>
+                        <li class="hover:text-white transition">Fort Worth</li>
+                        <li class="hover:text-white transition">Plano</li>
+                        <li class="hover:text-white transition">Frisco</li>
+                        <li class="hover:text-white transition">Arlington</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-semibold mb-6">Contact</h4>
+                    <ul class="text-sm text-brand-muted space-y-3">
+                        <li><a href="mailto:info@dfwlead.com" class="hover:text-brand-accent transition">info@dfwlead.com</a></li>
+                        <li><a href="tel:+14695574738" class="hover:text-brand-accent transition">(469) 557-4738</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-brand-border pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-xs text-brand-muted">© 2026 DFW Lead. All rights reserved.</p>
+                <div class="flex gap-6 text-xs text-brand-muted">
+                    <a href="privacy-policy.html" class="hover:text-brand-accent transition">Privacy Policy</a>
+                    <a href="terms-of-service.html" class="hover:text-brand-accent transition">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
