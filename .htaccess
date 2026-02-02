@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.dfwlead\.com [NC]
+RewriteRule ^(.*)$ https://dfwlead.com/$1 [R=301,L]
